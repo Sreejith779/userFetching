@@ -22,6 +22,7 @@ class UserScreen extends StatelessWidget {
           );
         }else if(data.hasData){
           var items = data.data as List<UserModel>;
+          
           return
             ListView.builder(itemBuilder: (context,index){
               return Card(
@@ -110,4 +111,7 @@ class UserScreen extends StatelessWidget {
 
     return list.map((e) => UserModel.fromJson(e)).toList();
   }
+}
+widget _banner(){
+  return Container();
 }
